@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jul  8 23:04:01 2026
+# Process ID: 1740
+# Current directory: C:/Users/Saifullah/vivado_files/single_cycle_processor_myself
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15432 C:\Users\Saifullah\vivado_files\single_cycle_processor_myself\single_cycle_processor_myself.xpr
+# Log file: C:/Users/Saifullah/vivado_files/single_cycle_processor_myself/vivado.log
+# Journal file: C:/Users/Saifullah/vivado_files/single_cycle_processor_myself\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Saifullah/vivado_files/single_cycle_processor_myself/single_cycle_processor_myself.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/Saifullah/vivado_files/single_cycle_processor_myself/riscv_tb_behav.wcfg
+source riscv_tb.tcl
+current_wave_config {riscv_tb_behav.wcfg}
+add_wave {{/riscv_tb/uut}} 
+save_wave_config {C:/Users/Saifullah/vivado_files/single_cycle_processor_myself/riscv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/Saifullah/vivado_files/single_cycle_processor_myself/riscv_tb_behav.wcfg
+source riscv_tb.tcl
+remove_forces { {/riscv_tb/uut/Instr} }
+save_wave_config {C:/Users/Saifullah/vivado_files/single_cycle_processor_myself/riscv_tb_behav.wcfg}

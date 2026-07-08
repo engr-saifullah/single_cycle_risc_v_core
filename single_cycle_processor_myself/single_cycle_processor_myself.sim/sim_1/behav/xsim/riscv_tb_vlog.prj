@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../single_cycle_processor_myself.srcs/sources_1/new/adder.sv" \
+"../../../../single_cycle_processor_myself.srcs/sources_1/new/alu.sv" \
+"../../../../single_cycle_processor_myself.srcs/sources_1/new/control_unit.sv" \
+"../../../../single_cycle_processor_myself.srcs/sources_1/new/data_memory.sv" \
+"../../../../single_cycle_processor_myself.srcs/sources_1/new/datapath.sv" \
+"../../../../single_cycle_processor_myself.srcs/sources_1/new/extend.sv" \
+"../../../../single_cycle_processor_myself.srcs/sources_1/new/instruction_memory.sv" \
+"../../../../single_cycle_processor_myself.srcs/sources_1/new/mux.sv" \
+"../../../../single_cycle_processor_myself.srcs/sources_1/new/program_counter.sv" \
+"../../../../single_cycle_processor_myself.srcs/sources_1/new/register_file.sv" \
+"../../../../single_cycle_processor_myself.srcs/sources_1/new/riscv_single_cycle.sv" \
+"../../../../single_cycle_processor_myself.srcs/sources_1/new/riscv_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
